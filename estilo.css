@@ -1,0 +1,33 @@
+.pagina {
+  background-color: gray;
+}
+
+.titulo {
+  background-color: #f1d590;
+  text-align: center;
+  margin: 25px;
+  padding: 25px;
+  width: auto;
+}
+
+ul.redes-sociais li {
+  display: inline-block;
+}
+
+.redes-sociais {
+  margin-top: 25px;
+  background-color: #f1d590;
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  font-size: 0.8em;
+  padding-top: 20px;
+}
+
+a:visited {
+  color: #282828;
+  text-decoration: none;
+}
