@@ -10,6 +10,11 @@
   width: auto;
 }
 
+.img-fluid {
+  padding-left: 5px;
+}
+
+
 ul.redes-sociais li {
   display: inline-block;
 }
@@ -35,4 +40,5 @@ a:visited {
 
 .portfolio {
   background-color: #f1d590;
+  text-align: center;
 }
