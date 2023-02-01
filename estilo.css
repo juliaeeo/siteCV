@@ -26,6 +26,14 @@ ul.redes-sociais li {
   text-align: center;
 }
 
+.fa-github {
+  color: #282828;
+}
+
+.fa-linkedin {
+  color: #282828;
+}
+
 footer {
   clear: both;
   text-align: center;
@@ -34,11 +42,14 @@ footer {
 }
 
 a:visited {
-  color: #282828;
+  /*color: #282828;*/
   text-decoration: none;
 }
 
 .portfolio {
   background-color: #f1d590;
   text-align: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
