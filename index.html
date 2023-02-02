@@ -47,16 +47,33 @@
   </div>
   <!-- portfolio e curriculo-->
 
-  <div class="portfolio">
-    <button onclick="portCV()">Portfólio</button>
-    <button onclick="portCV()">Curriculo</button>
+  <div class="portfolio-cv">
+    <button id="portf">Portfólio</button>
+    <button id="cv">Currículo</button>
   </div>
 
-  <!-- inicio javascript para Portfolio e Curriculo-->
+  <div id="portfolio" class="hidden">
+    Isto é um teste
+  </div>
+
+  <div id="curriculo" class="hidden">
+    Isto é outro teste
+  </div>
+
   <script>
-    function portCV() {
-      alert("em breve!");
-    }
+    const x = document.getElementById('portfolio');
+    const y = document.getElementById('curriculo');
+
+    const botao1 = document.getElementById('portf');
+    const botao2 = document.getElementById('cv');
+
+    botao1.addEventListener('click', (e) => {
+      x.classList.toggle('hidden');
+    });
+
+    botao2.addEventListener('click', (e) => {
+      y.classList.toggle('hidden');
+    });
   </script>
 
 
