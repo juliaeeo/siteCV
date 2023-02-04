@@ -46,28 +46,6 @@
     </div>
   </div>
 
-  <!-- portfolio e curriculo-->
-
-  <div class="portfolio-cv">
-    <button id="portf" type="button" class="btn btn-secondary">Portfólio</button>
-  </div>
-
-  <div id="portfolio" class="hidden">
-    <iframe src="portfolio.html"></iframe>
-  </div>
-
-  <script>
-    const x = document.getElementById('portfolio');
-
-    const botao1 = document.getElementById('portf');
-
-    botao1.addEventListener('click', (e) => {
-      x.classList.toggle('hidden');
-    });
-
-  </script>
-
-
   <!-- inicio dos contatos de rede social-->
   <ul class="redes-sociais">
     <li><a href=" https://github.com/juliaeeo" target="_blank"><i class="fa-brands fa-github"
@@ -79,6 +57,32 @@
     <li><a href="http://lattes.cnpq.br/9807601418124791" target="_blank"><img src="imagens/lattes2.png"
           style="width: 35px; margin-bottom: 15px;"></a></li>
   </ul>
+
+
+  <!-- início do portfolio-->
+
+  <div class="portfolio-cv">
+    <button id="portf" type="button" class="btn btn-secondary">Portfólio</button>
+  </div>
+
+  <div id="portfolio" class="hidden">
+    <iframe src="portfolio.html"></iframe>
+  </div>
+
+  <!-- código javascript para mostrar o portfolio-->
+  <script>
+    //recupera o elemento do botão
+    let botaoPortf = document.getElementById('portf');
+    let variavel = document.getElementById('portfolio');
+
+    //atrela uma função ao evento de 'click' do botão
+    botaoPortf.addEventListener('click', message)
+
+    function message() {
+      variavel.classList.toggle('hidden');
+    }
+
+  </script>
 
   <!-- inicio rodapé-->
   <footer>
