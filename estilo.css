@@ -17,12 +17,14 @@
 
 ul.redes-sociais li {
   display: inline-block;
+  margin: 0px 150px 0 0;
+
 }
 
 .redes-sociais {
-  margin-top: 25px;
-  padding-top: 20px;
-  background-color: #f1d590;
+  margin-top: 15px;
+  padding-top: 10px;
+  /* background-color: #f1d590; */
   text-align: center;
 }
 
