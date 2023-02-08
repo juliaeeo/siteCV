@@ -13,6 +13,11 @@
   width: auto;
 }
 
+.card {
+  font-size: 20px;
+  text-align: justify;
+}
+
 .img-fluid {
   padding-left: 5px;
 }
@@ -60,4 +65,25 @@ a:visited {
 
 .hidden {
   display: none;
+}
+
+.pf {
+  font-size: 16px;
+}
+
+
+@media (max-width: 480px) {
+
+  .card {
+    font-size: 30px;
+  }
+
+  ul.redes-sociais li {
+    display: grid;
+  }
+
+  .pf {
+    font-size: 30px;
+  }
+
 }
