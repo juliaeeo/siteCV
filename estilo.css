@@ -67,9 +67,6 @@ a:visited {
   display: none;
 }
 
-.pf {
-  font-size: 16px;
-}
 
 
 @media screen and (max-width:780px) {
@@ -80,10 +77,6 @@ a:visited {
 
   ul.redes-sociais li {
     display: grid;
-  }
-
-  .pf {
-    font-size: 30px;
   }
 
 }
