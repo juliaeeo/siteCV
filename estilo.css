@@ -14,7 +14,7 @@
 }
 
 .card {
-  font-size: 20px;
+  font-size: 21px;
   text-align: justify;
 }
 
@@ -58,9 +58,9 @@ a:visited {
 .portfolio-cv {
   background-color: #f1d590;
   text-align: center;
-  margin-top: 25px;
+  /*   margin-top: 25px;*/
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .hidden {
@@ -69,14 +69,21 @@ a:visited {
 
 
 
+
 @media screen and (max-width:780px) {
 
-  .card {
-    font-size: 30px;
+  .titulo h1 {
+    color: #f8b408;
+    padding-bottom: 15px;
   }
 
-  ul.redes-sociais li {
-    display: grid;
+  .titulo h3 {
+    color: #ebc35f;
+  }
+
+  .card {
+    font-size: 23px;
+    text-align: center;
   }
 
 }
