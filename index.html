@@ -1,141 +1,101 @@
-<!-- curriculo Júlia-->
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" type="text/css" href="estilo.css">
-  <title>Júlia Epischina</title>
-  <script src="https://kit.fontawesome.com/cab6369081.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1TKL4NVEZV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-1TKL4NVEZV');
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julia Portfolio Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 
 </head>
 
-<body class="pagina">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <!-- inicio do cabeçalho-->
+<body>
   <header>
-    <div class="titulo">
-      <h1>Júlia Epischina Oliveira</h1>
-      <h3>Professora universitária, pesquisadora e estudante de desenvolvimento front-end</h3>
-    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">Quem sou eu</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">Meu Portfólio</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- inicio do card contendo foto e texto-->
-  <div class="container-sm">
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-2">
-          <img src="imagens/julia22.jpg" class="img-fluid">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <p class="card-text">Olá, meu nome é Júlia e tenho experiência como professora e pesquisadora na área de
-              exatas.
-            </p>
-            <p class="card-text"> Sou formada em Engenharia Elétrica (Universidade Mackenzie - SP) com um mestrado em
-              Física
-              Aplicada a Medicina
-              e Biologia (USP - Ribeirão Preto) e doutorado em Bioinformática (UFMG - Belo Horizonte).
-            </p>
-            <p class="card-text">Após me dedicar integralmente à maternidade desde 2018, iniciei meus estudos em
-              desenvolvimento front-end (HTML, CSS e JavaScript) em 2022.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- inicio dos contatos de rede social-->
-  <ul class="redes-sociais">
-    <li><a href=" https://github.com/juliaeeo" target="_blank"><i class="fa-brands fa-github"
-          style="font-size:40px"></i></a></li>
-
-    <li><a href="https://www.linkedin.com/in/juliaepischina/" target="_blank"><i class="fa-brands fa-linkedin"
-          style="font-size:40px"></i></a></li>
-
-    <li><a href="http://lattes.cnpq.br/9807601418124791" target="_blank"><img src="imagens/lattes2.png"
-          style="width: 35px; margin-bottom: 15px;"></a></li>
-  </ul>
-
-
-  <!-- início do portfolio-->
-
-  <div class="portfolio-cv">
-    <p>
-      <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-        aria-expanded="false" aria-controls="collapseExample">
-        Portfólio
-      </button>
+  <!-- Introduction -->
+  <section class="intro" id="home">
+    <h1 class="section__title section__title__intro">
+      Oi, eu sou a <strong>Júlia Epischina Oliveira</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">profª universitária e estudante web front-end
     </p>
-  </div>
-  <div class="collapse" id="collapseExample">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">e-Shelf</h4>
-        <p class="card-text"><small class="text-muted">Um projeto que está sendo desenvolvido para controlar e-books
-            lidos.</small></p>
+    <img src="imgs/julia1.jpeg" class="intro__img">
+  </section>
+
+  <!-- About me -->
+  <section class="my-services" id="about">
+    <h2 class="section__title section__title_services">Quem sou eu</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Professora universitária</h3>
+        <p>Formada em engenharia elétrica (Universidade Presbiteriana Mackenzie - São Paulo) com um mestrado em física
+          aplicada
+          a medicina e biologia (USP-Ribeirão Preto) e doutorado em Bioinformática (UFMG - Belo Horizonte).</p>
+        <p>Professora com experiência em disciplinas de graduação e pós graduação dos cursos de Engenharia, Ciência da
+          Computação e Sistemas de
+          Informação.</p>
       </div>
-      <a href="https://juliaeeo.github.io/e-shelf/" target="_blank"><img src="imagens/eshelf.png"
-          class="card-img-bottom" style="width: 30%;"></a>
-    </div>
-  </div>
-  <!--   <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-      <h4 class="card-title">e-Shelf</h4>
-      <p>Um projeto que está sendo desenvolvido para controlar e-books lidos.</p>
-      <div>
-        <a href="https://juliaeeo.github.io/e-shelf/" target="_blank"><img src="imagens/eshelf.png"></a>
+
+      <div class="service">
+        <h3>Pesquisadora</h3>
+        <p>Minhas pesquisas estão na área de processamento digital de imagens médicas e sistemas de recuperação de
+          imagens mamográficas.</p>
+      </div>
+
+      <div class="service">
+        <h3>Estudante web front-end</h3>
+        <p>As tecnologias estudadas são HTML + CSS + JavaScript.</p>
       </div>
     </div>
-  </div> -->
 
-  <!--     <div class="portfolio-cv">
-    <button id="portf" type="button" class="btn btn-secondary">Portfólio</button>
-  </div>
+    <a href="#work" class="btn">Portfólio</a>
+  </section>
 
 
-  <div id="portfolio" class="hidden">
-    <object data="portfolio.html" width="500" height="400"></object>
-  </div> -->
+  <!-- My work -->
+  <section class="my-work" id="work">
+    <h2 class="section__title">Meu Portfólio</h2>
+    <p class="section__subtitle"></p>
 
-  <!-- código javascript para mostrar o portfolio-->
-  <!--  <script>
-    //recupera o elemento do botão
-    let botaoPortf = document.getElementById('portf');
-    let variavel = document.getElementById('portfolio');
+    <div class="portfolio">
+      <a href="#" class="portfolio__item">
+        <img src="imgs/eshelf.png"> </a>
+    </div>
 
-    //atrela uma função ao evento de 'click' do botão
-    botaoPortf.addEventListener('click', message)
+    <div class="portfolio">
+      <a href="#" class="portfolio__item">
+        <img src="imgs/artigos.png"> </a>
+    </div>
+  </section>
 
-    function message() {
-      variavel.classList.toggle('hidden');
-    }
-
-  </script> -->
-
-  <!-- início do portfolio-->
-
-
-  <!-- inicio rodapé-->
+  <!-- Footer -->
   <footer>
-    <p>Todos os direitos reservados - &copy Júlia Epischina</p>
+    <ul class=" social-list">
+      <li class="social-list__item"><a class="social-list__link"
+          href="https://www.linkedin.com/in/juliaepischina/">Linkedin</a></li>
+      <li class="social-list__item"><a class="social-list__link" href="https://github.com/juliaeeo">Github</a></li>
+      <li class="social-list__item"><a class="social-list__link"
+          href="http://lattes.cnpq.br/9807601418124791">Lattes</a></li>
+    </ul>
   </footer>
+
 </body>
 
 </html>
