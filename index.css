@@ -79,7 +79,7 @@ section {
   color: var(--clr-dark);
   text-decoration: none;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
@@ -228,8 +228,8 @@ header {
 .hamburger::before,
 .hamburger::after {
   background: var(--clr-accent);
-  width: 2em;
-  height: 3px;
+  width: 3em;
+  height: 5px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
 }
@@ -322,11 +322,11 @@ header {
 }
 
 .services {
-  margin-bottom: 4em;
+  margin-bottom: 5em;
 }
 
 .service {
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 }
 
@@ -354,7 +354,9 @@ header {
 
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5%;
+  row-gap: 10%;
 }
 
 .portfolio__item {
@@ -412,7 +414,7 @@ header {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 1em 0 0;
+  margin: 0.5em 0 0;
   padding: 0;
 }
 
